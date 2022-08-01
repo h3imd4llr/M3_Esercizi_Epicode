@@ -1,0 +1,339 @@
+<!-- Crea una pagina responsive per mostrarci i tuoi album musicali preferiti.
+
+In questa pagina ci sarà una tua piccola biografia, i migliori album della tua vita, i peggiori che hai mai sentito, 
+e qualsiasi altra cosa relativa alla musica che ami.
+
+
+
+REGOLE:
+
+Il progetto dev'essere caricato in una nuova repository su GitHub e linkata al tuo Docente.
+Puoi usare Google / StackOverflow, MA ti suggeriamo caldamente di riferirti principalmente alla documentazione fornita, 
+per non perderti in ricerche infruttuose per troppo tempo.
+
+Prova il tuo lavoro su varie risoluzioni di schermo, ingrandendo e rimpicciolendo la finestra, 
+e soprattutto usando i developer tools del browser che forniscono l'emulatore di svariati device sul quale potrai vedere esattamente come si comporta il tuo layout.
+
+Usa le classi di Bootstrap4.6 per creare la griglia responsive quando necessario.
+Usa container > row > col in questo ordine per ottenere un layout responsive perfetto.
+
+NOTE:
+Non c'è una design preciso da seguire, dai sfogo alla tua creatività. L'unica cosa importante è che sia responsive!
+Fai qualche ricerca nel web per trarre ispirazione su come rappresentare un progetto musicale con svariate copertine di dischi.
+Può essere simile ad Amazon Music, Spotify, o Apple Music, o qualsiasi altra collezione di dischi là fuori nel world wide web.
+
+
+
+CONSIGLIO: Concentrati sulla struttura e la responsività prima, quando quella funziona puoi dedicarti alla parte grafica e di dettaglio.
+
+
+ESERCIZI:
+
+1) Andrai a creare un componente per rappresentare la carta del tuo album, che riutilizzerai in tutto il progetto. 
+Bootstrap ti dà disponibili alcuni componenti per card e immagini. 
+Puoi scegliere di partire da quelli e modificarli, oppure partire da zero e creare i tuoi componenti via CSS. Gli elementi necessari sono:  
+
+L'elemento Card
+L'immagine di copertina dell'album
+Il titolo dell'album
+Il gruppo / artista / dj dell'album
+Il genere dell'album
+La durata dell'album
+
+NB: Assicurati di applicare le stesse regole di stile a tutti i componenti album che userai nella pagina per mantenere la coerenza degli elementi e degli stili.
+
+
+
+2)  Implementa una navigation bar usando il componente boostrap apposito.
+
+     Questa navigazione dovrà linkare ogni sezione nella tua pagina.
+
+
+3) Crea una sezione responsive per i tuoi album preferiti.
+
+     In questa sezione dovrai avere:
+
+4 album per linea quando lo schermo è molto grande
+3 album per linea quando lo schermo ha una dimensione intermedia (tablet o simili)
+2 album per linea qunado lo schermo è molto piccolo (mobile)
+
+4) Crea una sezione per le recensioni degli album.
+
+      Prendi un album che ti piace molto e crea una sezione con:
+
+Una grande immagine di copertina
+Titolo
+Band
+Durata
+Genere
+Tracce dell'album ( in una tabella. Trovala tra i componenti Bootstrap ) 
+... e qualsiasi cosa ti venga in mente di interessante che lo riguardi!
+
+5) La lista dei peggiori album mai sentiti! Seleziona gli album che davvero non sopporti o qualcosa che pensi sia sopravvalutato e inseriscilo nella "hall of shame" in forma di tabella!
+
+
+6) Tutte copertine! Tappezza una sezione di copertine di album. Solo immagini in un layout a griglia senza spazi fra di loro, con le immagini alla stessa altezza. Inserisci almeno 20 immagini per avere un bell'effetto.
+
+
+EXTRA) Aggiungi un bottone ad ogni sezione, cliccandolo il corpo della sezione dovrà apparire (se nascosto) o nascondersi (se visibile).
+
+SUGGERIMENTO: vedi se esiste un componente Bootstrap che faccia al caso tuo. Se non dovessi trovarlo puoi sempre raggiungere lo stesso effetto usando la normale manipolazione del DOM 
+
+EXTRA) Aggiungi nel footer, al momento del caricamento della pagina, il numero di album presenti nella pagina.
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <style>
+    .visibility{
+      display: none;
+    }
+  </style>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Giovanni D'Amato</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Album
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Hellvisback - Salmo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Danger - Nitro</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Indaco - En?gma</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Shardana - En?gma</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Bio-->
+<p class="lead" id="bio">
+  Mi chiamo Giovanni D'Amato, ho 23 anni e nella mia "breve" vita, ho ascoltato molti generi di album, che vanno dal rap, al neomelodico all'hard rock.
+</p>
+
+<h1 class="text-center">Hall of Fame</h1>
+<div class="container">
+  <div class="row align-items-start">
+    <div class="card col-md-5" style="width: 17.8rem;">
+      <img src="data:image/png;base64,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" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hellvisback</h5>
+        <p class="card-text">Hellvisback è il quarto album in studio del rapper italiano Salmo, pubblicato il 5 febbraio 2016 dalla Sony Music.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Salmo</li>
+        <li class="list-group-item">50:05</li>
+        <li class="list-group-item">Hip hop music, Alternative hip hop, Rap music</li>
+      </ul>
+    </div>
+    <div class="card col-md-6" style="width: 17.8rem;">
+      <img src="https://m.media-amazon.com/images/I/71HWl7txFUL._AC_SL1200_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Danger</h5>
+        <p class="card-text">Danger è il primo album in studio del rapper italiano Nitro, pubblicato il 16 luglio 2013 dalla Machete Empire Records e distribuito dalla Sony Music e dalla Epic Records.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Nitro</li>
+        <li class="list-group-item">33:00</li>
+        <li class="list-group-item">Alternative hip hop
+          Hardcore hip hop</li>
+      </ul>
+    </div>
+    <div class="card col-md-6" style="width: 17.8rem;">
+      <img src="http://images.genius.com/c285b179dbfd387e5e5875545d8b3473.1000x1000x1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Indaco</h5>
+        <p class="card-text">Il significato dell’Indaco è il paradigma del nuovo disco di En?gma e della subcultura new-age i nati tra gli Anni '60 e i '00 si dice possiedano una speciale aura di colore Indaco.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">En?gma</li>
+        <li class="list-group-item">39:24</li>
+        <li class="list-group-item">Hip-Hop/Rap, UK Rap, Indian Hip-Hop</li>
+      </ul>
+    </div>
+    <div class="card col-md-6" style="width: 17.8rem;">
+      <img src="https://m.media-amazon.com/images/I/71zjl6VUjvL._AC_SY450_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Shardana</h5>
+        <p class="card-text">Shardana è il quarto album in studio del rapper italiano Enigma, pubblicato il 23 febbraio 2018 dalla Artist First.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">En?gma</li>
+        <li class="list-group-item">31:33</li>
+        <li class="list-group-item">Alternative hip hop
+          Elettrorap</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<h1 class="text-center">Hall of Shame</h1>
+<div class="container">
+  <div class="card col-md-6" style="width: 17.8rem;">
+    <img src="https://i.scdn.co/image/ab67616d0000b273685a640a130b7b36c5ffc5ff" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">MACHETE MIXTAPE 4</h5>
+      <p class="card-text">Machete Mixtape 4 è un mixtape del collettivo italiano Machete Crew, pubblicato il 5 luglio 2019 dalla Machete Empire Records e da Sony Music.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Machete Crew</li>
+      <li class="list-group-item">45:28</li>
+      <li class="list-group-item">Alternative hip hop
+        Hardcore hip hop</li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <div class="row align-items-start">
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+      <div class="collapse" id="collapse1">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+      <div class="collapse" id="collapse2">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+      <div class="collapse" id="collapse3">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+      <div class="collapse" id="collapse4">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+      <div class="collapse" id="collapse5">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+      <div class="collapse" id="collapse6">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+      <div class="collapse" id="collapse7">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+      <div class="collapse" id="collapse8">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+      <div class="collapse" id="collapse9">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+      <div class="collapse" id="collapse10">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+      <div class="collapse" id="collapse11">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+      <div class="collapse" id="collapse12">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+      <div class="collapse" id="collapse13">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+      <div class="collapse" id="collapse14">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+      <div class="collapse" id="collapse15">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+      <div class="collapse" id="collapse16">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+      <div class="collapse" id="collapse17">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+      <div class="collapse" id="collapse18">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+      <div class="collapse" id="collapse19">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+    <div class="card b" style="width: 17.8rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+      <div class="collapse" id="collapse20">
+        <button type="button" class="btn btn-primary center">Button</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+      var imgs = document.querySelectorAll(".card.b")
+      for (img of imgs){
+        img.addEventListener("click", addBtn)
+      }
+
+      function addBtn() {
+        document.querySelectorAll(".card.b .btn.btn-primary").classList.toggle("visibility")
+      }
+    </script>
+  </body>
+</html>
