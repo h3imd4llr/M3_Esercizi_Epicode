@@ -1,0 +1,41 @@
+@font-face {
+    font-family: fontAwesome;
+    src: url(../fonts/fa-regular-400.woff2);
+}
+html{
+    font-family: fontAwesome;
+    background-color: #f5f4f8;
+}
+
+
+.bg-background {
+    background-color: #7550fe;
+}
+
+.bg-video{
+    background-color: #ffeeda;
+}
+
+.subnav {
+    border-radius: 50%;
+    padding: 9px 12px;
+}
+
+.bell {
+    border-radius: 50%;
+    padding: 4px 8px;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-around;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 1.5rem;
+}
+
+.visibility{
+    display: none;
+}

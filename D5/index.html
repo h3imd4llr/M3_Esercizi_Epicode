@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img src="./assets/img/logo.svg" alt="" width="30" height="24">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Browse
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Browse 1</a></li>
+                      <li><a class="dropdown-item" href="#">Browse 2</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Browse 3</a></li>
+                    </ul>
+                  </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Landings
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Landings 1</a></li>
+                  <li><a class="dropdown-item" href="#">Landings 2</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Landings 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Pages 1</a></li>
+                  <li><a class="dropdown-item" href="#">Pages 2</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Pages 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Accounts
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Accounts 1</a></li>
+                  <li><a class="dropdown-item" href="#">Accounts 2</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Accounts 3</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex m-2">
+                <i class="bi bi-bell rounded-circle bg-light mx-2 bell"></i>
+                <img src="./assets/img/avatar-1.jpg" class="rounded-circle" id="av" alt="" width="30" height="30">
+            </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--End Navbar-->
+
+      <!--Extra-->
+      <div class="position-absolute end-0 visibility" id="menuAv">
+        <div class="card" style="width: 18rem;">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-auto">
+                <img src="./assets/img/avatar-1.jpg" class="rounded-circle" id="av" alt="" width="30" height="30">
+                </div>
+                <div class="col-auto">
+                  <h6 class="m-0">Annette Black</h6>
+                  <p class="text-muted m-0">annette@geeksui.com</p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="col pb-2">
+                <i class="bi bi-person"></i>
+                Person
+              </div>
+              <div class="col pb-2">
+                <i class="bi bi-star"></i>
+                Subscription
+              </div>
+              <div class="col pb-2">
+                <i class="bi bi-gear"></i>
+                Settings
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="col pb-2">
+                <i class="bi bi-power"></i>
+                Sign Out
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--End Extra-->
+      <!--Welcome students-->
+      <div class="container-fluid bg-background text-white">
+        <div class="row">
+          <div class="col p-5 m-5">
+            <h1>Welcome Web Students!</h1>
+            <p>Hand-picked Instructor and expertly crafted courses, designed for the modern students and entrepreneur.</p>
+            <button class="btn btn-success">Browse Courses</button>
+            <button class="btn btn-light">Are You Instructor?</button>
+          </div>
+          <div class="col">
+            <img src="./assets/img/hero-img.png" alt="" class="p-0">
+          </div>
+        </div>
+      </div>
+      <!--End Welcome students-->
+      <!--Lifetime access-->
+      <div class="container-fluid border-bottom border border-1 border-opacity-10">
+        <div class="row justify-content-center py-3">
+          <div class="col-auto row">
+            <div class="col-auto gy-3">
+              <i class="bi bi-camera-video bg-video subnav"></i>
+            </div>
+            <div class="col-auto">
+              <p class="p-0 m-0"><strong>30,000 online courses</strong></p>
+              <p class="p-0 m-0">Enjoy a variety of fresh topics</p>
+            </div>
+          </div>
+          <div class="col-auto row">
+            <div class="col-auto gy-3">
+              <i class="bi bi-people bg-video subnav"></i>
+            </div>
+            <div class="col-auto">
+              <p class="p-0 m-0"><strong>Expert instruction</strong></p>
+              <p class="p-0 m-0">Find the right instructor for you</p>
+            </div>
+          </div>
+          <div class="col-auto row">
+            <div class="col-auto gy-3">
+              <i class="bi bi-clock bg-video subnav"></i>
+            </div>
+            <div class="col-auto">
+              <p class="p-0 m-0"><strong>Lifetime access</strong></p>
+              <p class="p-0 m-0">Learn on your schedule</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Recommended to you -->
+      <div class="container">
+        <h5 style="margin-left: 1.7rem; margin-bottom: 1.5rem; margin-top: 3rem">Recommended to you</h5>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container px-4">
+                <div class="row courses">
+                  <div class="card p-0 overflow-hidden h-100 col-md-2 col-md-2" style="width: 15rem;">
+                    <img src="./assets/img/course-graphql.jpg" alt="">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <div class="card-body px-1">
+                            <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                            <div class="container-fluid p-0">
+                              <div class="row">
+                                <div class="col-auto">
+                                  <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-clock p-0"></i> 2h 40m <i class="bi bi-bar-chart-fill"></i>Beginner</h6>
+                                </div>
+                              </div>
+                            </div>
+                            <p class="card-text text-muted mt-2">
+                              <i class="bi bi-star-fill p-0"></i>
+                              <i class="bi bi-star-fill p-0"></i>
+                              <i class="bi bi-star-half p-0"></i>
+                              <i class="bi bi-star p-0"></i>
+                              <i class="bi bi-star p-0"></i>
+                              2.5 (1,500)
+                            </p>
+                            <div class="row">
+                              <div class="col-auto">
+                                <p><strong>$500</strong></p>
+                              </div>
+                              <div class="col-auto p-0">
+                                <p class="text-muted"><del>$600</del></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="row pt-3">
+                            <div class="col-auto">
+                              <img src="./assets/img/avatar-5.jpg" alt="" class="avatar">
+                            </div>
+                            <div class="col-auto p-0">
+                              <p class="text-muted">Brooklin Simmons
+                                <i class="bi bi-bookmark"></i>
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card p-0 overflow-hidden h-100 col-md-2 col-md-2 col-md-2" style="width: 15rem;">
+                      <img src="./assets/img/course-javascript.jpg" alt="">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <div class="card-body px-1">
+                            <h6 class="card-title">A Complete Beginner's Guide to JavaScript</h6>
+                            <div class="container-fluid p-0">
+                              <div class="row">
+                                <div class="col-auto">
+                                  <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-clock p-0"></i> 4h 10m <i class="bi bi-bar-chart-fill"></i> Advance</h6>
+                                </div>
+                              </div>
+                            </div>
+                            <p class="card-text text-muted mt-2">
+                              <i class="bi bi-star-fill p-0"></i>
+                              <i class="bi bi-star-fill p-0"></i>
+                              <i class="bi bi-star-fill p-0"></i>
+                              <i class="bi bi-star-half p-0"></i>
+                              <i class="bi bi-star p-0"></i>
+                              3.5 (7,500)
+                            </p>
+                            <div class="row">
+                              <div class="col-auto">
+                                <p><strong>$700</strong></p>
+                              </div>
+                              <div class="col-auto p-0">
+                                <p class="text-muted"><del>$850</del></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="row pt-3">
+                            <div class="col-auto">
+                              <img src="./assets/img/avatar-1.jpg" alt="" class="avatar">
+                            </div>
+                            <div class="col-auto p-0">
+                              <p class="text-muted">Jenny Wilson
+                                <i class="bi bi-bookmark"></i>
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card p-0 overflow-hidden h-100 col-md-2 col-md-2" style="width: 15rem;">
+                      <img src="./assets/img/course-node.jpg" alt="">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <div class="card-body px-1">
+                            <h6 class="card-title">Beginning Node.js, Express & MongoDB Development</h6>
+                            <div class="container-fluid p-0">
+                              <div class="row">
+                                <div class="col-auto">
+                                  <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-clock p-0"></i> 2h 00m <i class="bi bi-bar-chart-fill"></i>Intermediate</h6>
+                                </div>
+                              </div>
+                            </div>
+                            <p class="card-text text-muted mt-2">
+                              <i class="bi bi-star-fill p-0"></i>
+                              <i class="bi bi-star-fill p-0"></i>
+                              <i class="bi bi-star-fill p-0"></i>
+                              <i class="bi bi-star-fill p-0"></i>
+                              <i class="bi bi-star p-0"></i>
+                              4.0 (15,700)
+                            </p>
+                            <div class="row">
+                              <div class="col-auto">
+                                <p><strong>$800</strong></p>
+                              </div>
+                              <div class="col-auto p-0">
+                                <p class="text-muted"><del>$950</del></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="row pt-3">
+                            <div class="col-auto">
+                              <img src="./assets/img/avatar-3.jpg" alt="" class="avatar">
+                            </div>
+                            <div class="col-auto p-0">
+                              <p class="text-muted">Sina Ray
+                                <i class="bi bi-bookmark"></i>
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card p-0 overflow-hidden h-100 col-md-2 col-md-2" style="width: 15rem;">
+                      <img src="./assets/img/course-laravel.jpg" alt="">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <div class="card-body px-1">
+                            <h6 class="card-title">Laravel: The Ultimate Beginner's Guide to Learn</h6>
+                            <div class="container-fluid p-0">
+                              <div class="row">
+                                <div class="col-auto">
+                                  <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-clock p-0"></i> 1h 00m <i class="bi bi-bar-chart-fill"></i> Beginner</h6>
+                                </div>
+                              </div>
+                            </div>
+                            <p class="card-text text-muted mt-2">
+                              <i class="bi bi-star-fill p-0"></i>
+                              <i class="bi bi-star-fill p-0"></i>
+                              <i class="bi bi-star-fill p-0"></i>
+                              <i class="bi bi-star-fill p-0"></i>
+                              <i class="bi bi-star-half p-0"></i>
+                              4.5 (2,500)
+                            </p>
+                            <div class="row">
+                              <div class="col-auto">
+                                <p><strong>$170</strong></p>
+                              </div>
+                              <div class="col-auto p-0">
+                                <p class="text-muted"><del>$220</del></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="row pt-3">
+                            <div class="col-auto">
+                              <img src="./assets/img/avatar-7.jpg" alt="" class="avatar">
+                            </div>
+                            <div class="col-auto p-0">
+                              <p class="text-muted">Sobo Rikhan
+                                <i class="bi bi-bookmark"></i>
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+        <!--End Recommended to you-->
+        <!--Most Popular-->
+        <div class="container">
+          <h5 style="margin-left: 1.7rem; margin-bottom: 1.5rem; margin-top: 3rem">Most Popular</h5>
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container px-4">
+                  <div class="row courses">
+                    <div class="card p-0 overflow-hidden h-100 col-md-2 col-md-2" style="width: 15rem;">
+                      <img src="./assets/img/course-html.jpg" alt="">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <div class="card-body px-1">
+                            <h6 class="card-title">HTML Full Course - Build a Website Tutorial</h6>
+                            <div class="container-fluid p-0">
+                              <div class="row">
+                                <div class="col-auto">
+                                  <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-clock p-0"></i> 3h 16m <i class="bi bi-bar-chart-fill"></i> Beginner</h6>
+                                </div>
+                              </div>
+                            </div>
+                            <p class="card-text text-muted mt-2">
+                              <i class="bi bi-star-fill p-0"></i>
+                              <i class="bi bi-star-fill p-0"></i>
+                              <i class="bi bi-star-fill p-0"></i>
+                              <i class="bi bi-star p-0"></i>
+                              <i class="bi bi-star p-0"></i>
+                              3.0 (1,600)
+                            </p>
+                            <div class="row">
+                              <div class="col-auto">
+                                <p><strong>$550</strong></p>
+                              </div>
+                              <div class="col-auto p-0">
+                                <p class="text-muted"><del>$700</del></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="row pt-3">
+                            <div class="col-auto">
+                              <img src="./assets/img/avatar-1.jpg" alt="" class="avatar">
+                            </div>
+                            <div class="col-auto p-0">
+                              <p class="text-muted">Miston Wilson
+                                <i class="bi bi-bookmark"></i>
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div> 
+                      <div class="card p-0 overflow-hidden h-100 col-md-2 col-md-2" style="width: 15rem;">
+                        <img src="./assets/img/course-javascript.jpg" alt="">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <div class="card-body px-1">
+                              <h6 class="card-title">A Complete Beginner's Guide to JavaScript</h6>
+                              <div class="container-fluid p-0">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-clock p-0"></i> 4h 10m <i class="bi bi-bar-chart-fill"></i> Advance</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="card-text text-muted mt-2">
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-half p-0"></i>
+                                <i class="bi bi-star p-0"></i>
+                                3.5 (7,500)
+                              </p>
+                              <div class="row">
+                                <div class="col-auto">
+                                  <p><strong>$700</strong></p>
+                                </div>
+                                <div class="col-auto p-0">
+                                  <p class="text-muted"><del>$850</del></p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row pt-3">
+                              <div class="col-auto">
+                                <img src="./assets/img/avatar-1.jpg" alt="" class="avatar">
+                              </div>
+                              <div class="col-auto p-0">
+                                <p class="text-muted">Jenny Wilson
+                                  <i class="bi bi-bookmark"></i>
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card p-0 overflow-hidden h-100 col-md-2 col-md-2" style="width: 15rem;">
+                        <img src="./assets/img/course-node.jpg" alt="">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <div class="card-body px-1">
+                              <h6 class="card-title">Beginning Node.js, Express & MongoDB Development</h6>
+                              <div class="container-fluid p-0">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-clock p-0"></i> 2h 00m <i class="bi bi-bar-chart-fill"></i>Intermediate</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="card-text text-muted mt-2">
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star p-0"></i>
+                                4.0 (15,700)
+                              </p>
+                              <div class="row">
+                                <div class="col-auto">
+                                  <p><strong>$800</strong></p>
+                                </div>
+                                <div class="col-auto p-0">
+                                  <p class="text-muted"><del>$950</del></p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row pt-3">
+                              <div class="col-auto">
+                                <img src="./assets/img/avatar-3.jpg" alt="" class="avatar">
+                              </div>
+                              <div class="col-auto p-0">
+                                <p class="text-muted">Sina Ray
+                                  <i class="bi bi-bookmark"></i>
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card p-0 overflow-hidden h-100 col-md-2 col-md-2" style="width: 15rem;">
+                        <img src="./assets/img/course-react.jpg" alt="">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <div class="card-body px-1">
+                              <h6 class="card-title">How to easily create a website with React</h6>
+                              <div class="container-fluid p-0">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-clock p-0"></i> 3h 55m <i class="bi bi-bar-chart-fill"></i> Advance</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="card-text text-muted mt-2">
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-half p-0"></i>
+                                4.5 (1,500)
+                              </p>
+                              <div class="row">
+                                <div class="col-auto">
+                                  <p><strong>$600</strong></p>
+                                </div>
+                                <div class="col-auto p-0">
+                                  <p class="text-muted"><del>$750</del></p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row pt-3">
+                              <div class="col-auto">
+                                <img src="./assets/img/avatar-2.jpg" alt="" class="avatar">
+                              </div>
+                              <div class="col-auto p-0">
+                                <p class="text-muted">April Noms
+                                  <i class="bi bi-bookmark"></i>
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+            </div>
+        <!--Trending-->
+        <div class="container">
+          <h5 style="margin-left: 1.7rem; margin-bottom: 1.5rem; margin-top: 3rem">Trending</h5>
+          <div id="carouselExampleFade1" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container px-4">
+                  <div class="row courses">
+                    <div class="card p-0 overflow-hidden h-100 col-md-2" style="width: 15rem;">
+                      <img src="./assets/img/course-gatsby.jpg" alt="">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <div class="card-body px-1">
+                              <h6 class="card-title">Revolutionize how you build the web</h6>
+                              <div class="container-fluid p-0">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-clock p-0"></i> 1h 46m <i class="bi bi-bar-chart-fill"></i> Intermediate</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="card-text text-muted mt-2">
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-half p-0"></i>
+                                <i class="bi bi-star p-0"></i>
+                                <i class="bi bi-star p-0"></i>
+                                2.5 (16,500)
+                              </p>
+                              <div class="row">
+                                <div class="col-auto">
+                                  <p><strong>$800</strong></p>
+                                </div>
+                                <div class="col-auto p-0">
+                                  <p class="text-muted"><del>$850</del></p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row pt-3">
+                              <div class="col-auto">
+                                <img src="./assets/img/avatar-3.jpg" alt="" class="avatar">
+                              </div>
+                              <div class="col-auto p-0">
+                                <p class="text-muted">Jenny Wilson
+                                  <i class="bi bi-bookmark"></i>
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card p-0 overflow-hidden h-100 col-md-2" style="width: 15rem;">
+                        <img src="./assets/img/course-html.jpg" alt="">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <div class="card-body px-1">
+                              <h6 class="card-title">HTML Full Course - Build a Website Tutorial</h6>
+                              <div class="container-fluid p-0">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-clock p-0"></i> 3h 16m <i class="bi bi-bar-chart-fill"></i> Beginner</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="card-text text-muted mt-2">
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star p-0"></i>
+                                <i class="bi bi-star p-0"></i>
+                                3.0 (1,600)
+                              </p>
+                              <div class="row">
+                                <div class="col-auto">
+                                  <p><strong>$550</strong></p>
+                                </div>
+                                <div class="col-auto p-0">
+                                  <p class="text-muted"><del>$700</del></p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row pt-3">
+                              <div class="col-auto">
+                                <img src="./assets/img/avatar-1.jpg" alt="" class="avatar">
+                              </div>
+                              <div class="col-auto p-0">
+                                <p class="text-muted">Miston Wilson
+                                  <i class="bi bi-bookmark"></i>
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card p-0 overflow-hidden h-100 col-md-2" style="width: 15rem;">
+                        <img src="./assets/img/course-node.jpg" alt="">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <div class="card-body px-1">
+                              <h6 class="card-title">Beginning Node.js, Express & MongoDB Development</h6>
+                              <div class="container-fluid p-0">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-clock p-0"></i> 2h 00m <i class="bi bi-bar-chart-fill"></i>Intermediate</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="card-text text-muted mt-2">
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star p-0"></i>
+                                4.0 (15,700)
+                              </p>
+                              <div class="row">
+                                <div class="col-auto">
+                                  <p><strong>$800</strong></p>
+                                </div>
+                                <div class="col-auto p-0">
+                                  <p class="text-muted"><del>$950</del></p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row pt-3">
+                              <div class="col-auto">
+                                <img src="./assets/img/avatar-3.jpg" alt="" class="avatar">
+                              </div>
+                              <div class="col-auto p-0">
+                                <p class="text-muted">Sina Ray
+                                  <i class="bi bi-bookmark"></i>
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card p-0 overflow-hidden h-100 col-md-2" style="width: 15rem;">
+                        <img src="./assets/img/course-laravel.jpg" alt="">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <div class="card-body px-1">
+                              <h6 class="card-title">Laravel: The Ultimate Beginner's Guide to Learn</h6>
+                              <div class="container-fluid p-0">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-clock p-0"></i> 1h 00m <i class="bi bi-bar-chart-fill"></i> Beginner</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="card-text text-muted mt-2">
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-fill p-0"></i>
+                                <i class="bi bi-star-half p-0"></i>
+                                4.5 (2,500)
+                              </p>
+                              <div class="row">
+                                <div class="col-auto">
+                                  <p><strong>$170</strong></p>
+                                </div>
+                                <div class="col-auto p-0">
+                                  <p class="text-muted"><del>$220</del></p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row pt-3">
+                              <div class="col-auto">
+                                <img src="./assets/img/avatar-7.jpg" alt="" class="avatar">
+                              </div>
+                              <div class="col-auto p-0">
+                                <p class="text-muted">Sobo Rikhan
+                                  <i class="bi bi-bookmark"></i>
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </div>
+          <!--End Trending-->
+          <script>
+            let menuOn = document.getElementById("av")
+            menuOn.addEventListener("click", menuToggle)
+
+            function menuToggle() {
+              document.getElementById("menuAv").classList.toggle("visibility")
+            }
+            </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </body>
+    </html>
